@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DisasterSafe</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>DisasterSafe</h1>
+        <p>Disaster Preparedness and Alert System</p>
+    </header>
+
+    <main>
+        <h2>Welcome to DisasterSafe</h2>
+        <p>Your basic disaster preparedness and alert system.</p>
+
+        <button onclick="showMessage()">Test Alert</button>
+
+        <p id="message"></p>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>
