@@ -7,6 +7,10 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+@app.route("/")
+def home():
+    return redirect(url_for("sign_in"))
+
 @app.route("/sign-in", methods=["GET", "POST"])
 def sign_in():
 
