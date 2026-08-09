@@ -17,10 +17,20 @@
             <a href="#" class="logo">Disaster<span>Safe</span></a>
 
             <nav class="navbar">
-                <a href="#">Home</a>
-                <a href="#" class="active">Disasters</a>
-                <a href="#">Preparedness</a>
-                <a href="#">Emergency</a>
+                <a href="{{ url_for('home') }}">
+                    Home
+                </a>
+                <a href="{{ url_for('preparedness') }}" class="active">
+                    Preparedness
+                </a>
+
+                <a href="{{ url_for('guidelines') }}">
+                    Guidelines
+                </a>
+
+                <a href="{{ url_for('emergency') }}">
+                    Emergency
+                </a>
             </nav>
         </div>
     </header>
