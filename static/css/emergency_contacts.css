@@ -1,0 +1,659 @@
+/* =========================================================
+   DISASTERSAFE - EMERGENCY CONTACTS
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #ffffff;
+
+    color: #142552;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.container {
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+    width: 100%;
+
+    background: #142552;
+}
+
+
+.navbar {
+    max-width: 1100px;
+
+    min-height: 64px;
+
+    margin: 0 auto;
+
+    padding: 0 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* Logo */
+
+.brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+.brand-icon {
+    width: 27px;
+
+    height: 27px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 7px;
+
+    background: #ef4658;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 800;
+}
+
+
+/* Navigation */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 32px;
+}
+
+
+.nav-links a {
+    position: relative;
+
+    padding: 22px 0;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+
+.nav-links a:hover {
+    opacity: 0.85;
+}
+
+
+.nav-links a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 2px;
+
+    background: #ef4658;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.emergency-intro {
+    padding: 55px 0 50px;
+
+    text-align: center;
+
+    background: #fff4f2;
+}
+
+
+.section-label {
+    margin-bottom: 8px;
+
+    color: #ef4658;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+.emergency-intro h1 {
+    margin-bottom: 12px;
+
+    color: #142552;
+
+    font-size: 38px;
+
+    line-height: 1.2;
+}
+
+
+.intro-text {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    color: #687184;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   CONTACT SECTION
+========================================================= */
+
+.contacts-section {
+    padding: 50px 0 45px;
+
+    background: #ffffff;
+}
+
+
+.contacts-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+
+/* =========================================================
+   CONTACT CARD
+========================================================= */
+
+.contact-card {
+    min-height: 125px;
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    position: relative;
+
+    border: 1px solid #e2e7ef;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    color: #142552;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 5px 18px rgba(20, 37, 82, 0.05);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.contact-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 9px 24px rgba(20, 37, 82, 0.10);
+}
+
+
+/* Main emergency card */
+
+.primary-contact {
+    grid-column: span 2;
+
+    border: 2px solid #ef4658;
+
+    background: #fff8f8;
+}
+
+
+.primary-contact .contact-icon {
+    width: 58px;
+
+    height: 58px;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.contact-icon {
+    width: 50px;
+
+    height: 50px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background: #eef3ff;
+
+    font-size: 23px;
+}
+
+
+.primary-contact .contact-icon {
+    background: #ffe6e8;
+}
+
+
+/* =========================================================
+   CONTACT CONTENT
+========================================================= */
+
+.contact-content {
+    min-width: 0;
+
+    flex: 1;
+}
+
+
+.contact-label {
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: #ef4658;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    text-transform: uppercase;
+}
+
+
+.contact-content h2 {
+    margin-bottom: 1px;
+
+    color: #142552;
+
+    font-size: 27px;
+
+    line-height: 1.2;
+}
+
+
+.contact-content p {
+    margin-bottom: 2px;
+
+    color: #3d4658;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.contact-description {
+    color: #7a8291;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.call-arrow {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f1f4f9;
+    color: #142552;
+    font-size: 17px;
+}
+
+
+.contact-card:hover .call-arrow {
+    background: #142552;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   BEFORE YOU CALL
+========================================================= */
+
+.call-info {
+    margin-top: 28px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    border: 1px solid #dfe7f7;
+    border-radius: 9px;
+    background: #f5f8ff;
+}
+
+
+.info-icon {
+    width: 31px;
+    height: 31px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #dfe9ff;
+    color: #315eb8;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.call-info h2 {
+    margin-bottom: 2px;
+    color: #142552;
+    font-size: 14px;
+}
+
+
+.call-info p {
+    color: #596579;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.back-container {
+    padding-top: 30px;
+
+    text-align: center;
+}
+
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 17px;
+    border-radius: 6px;
+    background: #142552;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.back-button:hover {
+    background: #0b1c48;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+    padding: 20px 24px;
+    background: #142552;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        min-height: 58px;
+        padding: 0 18px;
+    }
+
+
+    .nav-links {
+        gap: 18px;
+    }
+
+
+    .nav-links a {
+        padding: 21px 0;
+        font-size: 12px;
+    }
+
+
+    .emergency-intro {
+        padding: 42px 0 38px;
+    }
+
+
+    .emergency-intro h1 {
+        font-size: 30px;
+    }
+
+
+    .intro-text {
+        font-size: 13px;
+    }
+
+
+    .contacts-section {
+        padding: 35px 0;
+    }
+
+
+    .contacts-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+
+    .primary-contact {
+        grid-column: span 1;
+    }
+
+
+    .contact-card {
+        min-height: 112px;
+        padding: 17px;
+        gap: 13px;
+    }
+
+
+    .contact-content h2 {
+        font-size: 24px;
+    }
+
+
+    .contact-description {
+        font-size: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    .navbar {
+        padding: 0 14px;
+    }
+
+
+    .brand {
+        font-size: 13px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+
+    .emergency-intro h1 {
+        font-size: 27px;
+    }
+
+
+    .contact-card {
+        min-height: 105px;
+        padding: 15px;
+    }
+
+
+    .contact-icon {
+        width: 43px;
+        height: 43px;
+        font-size: 19px;
+    }
+
+
+    .primary-contact .contact-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+
+    .contact-content h2 {
+        font-size: 22px;
+    }
+
+    .contact-content p {
+        font-size: 11px;
+    }
+
+
+    .contact-description {
+        font-size: 9px;
+    }
+
+
+    .call-arrow {
+        width: 27px;
+        height: 27px;
+        font-size: 15px;
+    }
+
+
+    .call-info {
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+
+    .call-info p {
+        font-size: 10px;
+    }
+
+}

@@ -34,7 +34,7 @@ body {
 /* ---------- Header ---------- */
 
 .header {
-    background: #ffffff;
+    background: #142552;
     border-bottom: 1px solid #e5e7eb;
     position: sticky;
     top: 0;
@@ -51,7 +51,7 @@ body {
 
 .logo {
     text-decoration: none;
-    color: #172033;
+    color: #ffffff;
     font-size: 25px;
     font-weight: 800;
     letter-spacing: -0.5px;

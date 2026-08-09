@@ -49,6 +49,10 @@ def preparedness():
 def guidelines():
     return render_template("guidelines.html")
 
+@app.route("/emergency-contacts")
+def emergency_contacts():
+    return render_template("emergency_contacts.html")
+
 
 # =========================
 # RUN APPLICATION
