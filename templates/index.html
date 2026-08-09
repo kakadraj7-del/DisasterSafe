@@ -2,29 +2,388 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="DisasterSafe - Disaster preparedness, alerts, safety guidelines and emergency information.">
 
     <title>DisasterSafe</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
 
-    <header>
-        <h1>DisasterSafe</h1>
-        <p>Disaster Preparedness and Alert System</p>
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+    <header class="site-header">
+
+        <div class="navbar">
+
+            <!-- Logo -->
+            <a href="#" class="brand">
+                <span class="brand-icon">!</span>
+                <span>Disaster Alert</span>
+            </a>
+
+            <!-- Mobile menu checkbox -->
+            <input type="checkbox"
+                   id="menu-toggle"
+                   class="menu-toggle">
+
+            <label for="menu-toggle"
+                   class="menu-button"
+                   aria-label="Open navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation -->
+            <nav class="nav-links">
+
+                <a href="#home" class="active">
+                    Home
+                </a>
+
+                <a href="#alerts">
+                    Alerts
+                </a>
+
+                <a href="#tips">
+                    Tips
+                </a>
+
+                <a href="#resources">
+                    Resources
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </nav>
+
+        </div>
+
     </header>
 
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
     <main>
-        <h2>Welcome to DisasterSafe</h2>
-        <p>Your basic disaster preparedness and alert system.</p>
 
-        <button onclick="showMessage()">Test Alert</button>
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
+        <section class="hero-section" id="home">
 
-        <p id="message"></p>
+            <div class="hero-content">
+
+                <h1>
+                    Be Aware.<br>
+                    Be Prepared.<br>
+                    <span>Stay Safe.</span>
+                </h1>
+
+                <p>
+                    Get real-time alerts and useful
+                    information during emergencies.
+                </p>
+
+                <a href="#alerts" class="primary-button">
+                    <span class="button-icon">♟</span>
+                    Check Alerts
+                </a>
+
+            </div>
+
+
+            <!-- Hero Illustration -->
+            <div class="hero-illustration">
+
+                <div class="cloud cloud-one"></div>
+                <div class="cloud cloud-two"></div>
+
+                <div class="rain rain-one"></div>
+                <div class="rain rain-two"></div>
+                <div class="rain rain-three"></div>
+
+                <!-- Phone -->
+                <div class="phone">
+
+                    <div class="phone-screen">
+
+                        <div class="alert-symbol">
+                            !
+                        </div>
+
+                        <div class="alert-text">
+                            ALERT!
+                        </div>
+
+                    </div>
+
+                    <div class="phone-speaker"></div>
+
+                </div>
+
+
+                <!-- City buildings -->
+                <div class="city">
+
+                    <div class="building building-one"></div>
+                    <div class="building building-two"></div>
+                    <div class="building building-three"></div>
+
+                </div>
+
+
+                <!-- House -->
+                <div class="house">
+
+                    <div class="roof"></div>
+
+                    <div class="house-body">
+
+                        <div class="house-door"></div>
+
+                        <div class="house-window"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Tree -->
+                <div class="tree">
+
+                    <div class="tree-top"></div>
+
+                    <div class="tree-trunk"></div>
+
+                </div>
+
+                <div class="ground"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ALERT SECTION
+        ========================== -->
+        <section class="alert-section" id="alerts">
+
+            <div class="alert-icon">
+                ☁
+            </div>
+
+            <div class="alert-content">
+
+                <h2>
+                    Weather Alert
+                </h2>
+
+                <p>
+                    Heavy rainfall expected in your area.<br>
+                    Stay indoors and stay safe!
+                </p>
+
+            </div>
+
+            <a href="#" class="alert-button">
+                View All Alerts
+                <span>›</span>
+            </a>
+
+        </section>
+
+
+        <!-- =========================
+             CURRENT WEATHER
+        ========================== -->
+        <section class="weather-section">
+
+            <h2 class="section-title">
+                Current Weather
+            </h2>
+
+            <div class="weather-card">
+
+                <div class="weather-main">
+
+                    <div class="weather-icon">
+                        ☁
+                    </div>
+
+                    <div class="weather-info">
+
+                        <h3>
+                            Moderate Rain
+                        </h3>
+
+                        <div class="weather-details">
+
+                            <span>
+                                <b>🌡</b>
+                                27°C
+                            </span>
+
+                            <span>
+                                <b>💧</b>
+                                Humidity 85%
+                            </span>
+
+                            <span>
+                                <b>〽</b>
+                                Wind 18 km/h
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="location">
+
+                    <span class="location-icon">
+                        ●
+                    </span>
+
+                    <span>
+                        Bangalore, India
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             QUICK ACCESS
+        ========================== -->
+        <section class="quick-access" id="resources">
+
+            <h2 class="section-title">
+                Quick Access
+            </h2>
+
+
+            <div class="access-grid">
+
+
+                <!-- Safety Tips -->
+                <a href="#tips"
+                   class="access-card safety-card">
+
+                    <div class="access-icon">
+                        ✓
+                    </div>
+
+                    <div class="access-content">
+
+                        <h3>
+                            Safety Tips
+                        </h3>
+
+                        <p>
+                            Learn what to do before,
+                            during and after a disaster.
+                        </p>
+
+                    </div>
+
+                    <span class="card-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- Guidelines -->
+                <a href="#guidelines"
+                   class="access-card guidelines-card">
+
+                    <div class="access-icon">
+                        ☷
+                    </div>
+
+                    <div class="access-content">
+
+                        <h3>
+                            Guidelines
+                        </h3>
+
+                        <p>
+                            Important do's and don'ts
+                            during emergencies.
+                        </p>
+
+                    </div>
+
+                    <span class="card-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- Emergency Contacts -->
+                <a href="#contact"
+                   class="access-card emergency-card">
+
+                    <div class="access-icon">
+                        ☎
+                    </div>
+
+                    <div class="access-content">
+
+                        <h3>
+                            Emergency Contacts
+                        </h3>
+
+                        <p>
+                            Quick access to important
+                            helpline numbers.
+                        </p>
+
+                    </div>
+
+                    <span class="card-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Empty anchors for future sections -->
+        <section id="tips" class="future-anchor"></section>
+        <section id="guidelines" class="future-anchor"></section>
+        <section id="contact" class="future-anchor"></section>
+
     </main>
 
+
+    <!-- =========================
+         JAVASCRIPT
+         We'll build this later.
+    ========================== -->
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 </body>
