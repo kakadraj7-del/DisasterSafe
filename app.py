@@ -26,7 +26,7 @@ def sign_in():
         print("Password:", password)
         print("Location:", location)
 
-        return redirect(url_for("home_page"))
+        return redirect(url_for("home"))
 
     return render_template("sign_in.html")
 
