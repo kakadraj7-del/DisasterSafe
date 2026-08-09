@@ -41,6 +41,10 @@ def sign_in():
 def contact():
     return render_template("contact.html")
 
+@app.route("/preparedness")
+def preparedness():
+    return render_template("preparedness.html")
+
 
 # =========================
 # RUN APPLICATION

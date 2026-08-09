@@ -1,0 +1,245 @@
+/* =========================================
+   DisasterSafe - Disaster Cards
+   ========================================= */
+
+
+/* ---------- Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fa;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+
+/* ---------- Common Container ---------- */
+
+.container {
+    width: min(1120px, 92%);
+    margin: 0 auto;
+}
+
+
+/* ---------- Header ---------- */
+
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #172033;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: #e63946;
+}
+
+
+/* ---------- Navigation ---------- */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #e63946;
+}
+
+
+/* ---------- Introduction ---------- */
+
+.disaster-intro {
+    text-align: center;
+    padding: 70px 0 45px;
+}
+
+.section-label {
+    color: #e63946;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.disaster-intro h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.15;
+    color: #172033;
+    margin-bottom: 18px;
+}
+
+.intro-text {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #6b7280;
+    font-size: 16px;
+}
+
+
+/* ---------- Disaster Section ---------- */
+
+.disaster-section {
+    padding: 10px 0 80px;
+}
+
+
+/* ---------- Grid ---------- */
+
+.disaster-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px;
+}
+
+
+/* ---------- Disaster Card ---------- */
+
+.disaster-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    overflow: hidden;
+
+    text-decoration: none;
+    color: inherit;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 390px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.disaster-card:hover {
+    transform: translateY(-6px);
+    border-color: #e63946;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ---------- Image Area ---------- */
+
+.disaster-image {
+    height: 230px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eef3f7;
+
+    overflow: hidden;
+}
+
+.disaster-icon {
+    width: 145px;
+    height: 145px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    font-size: 72px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease;
+}
+
+.disaster-card:hover .disaster-icon {
+    transform: scale(1.08);
+}
+
+
+/* ---------- Card Content ---------- */
+
+.card-content {
+    padding: 22px 24px 8px;
+}
+
+.card-content h2 {
+    color: #172033;
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.card-content p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* ---------- View More ---------- */
+
+.view-more {
+    margin-top: auto;
+    padding: 12px 24px 22px;
+
+    color: #e63946;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* ---------- Footer ---------- */
+
+.footer {
+    background: #172033;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 24px 15px;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   Tablet
+   ========================================= */

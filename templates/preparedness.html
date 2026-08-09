@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisasterSafe - Types of Disasters</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/preparedness.css') }}">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="#" class="logo">Disaster<span>Safe</span></a>
+
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#" class="active">Disasters</a>
+                <a href="#">Preparedness</a>
+                <a href="#">Emergency</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Page Heading -->
+        <section class="disaster-intro">
+            <div class="container">
+                <p class="section-label">DISASTER AWARENESS</p>
+
+                <h1>Types of Disasters</h1>
+
+                <p class="intro-text">
+                    Learn about different types of disasters and understand
+                    how to stay safe before, during, and after an emergency.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Disaster Grid -->
+        <section class="disaster-section">
+            <div class="container">
+
+                <div class="disaster-grid">
+
+                    <!-- Flood -->
+                    <a href="#" class="disaster-card">
+                        <div class="disaster-image">
+                            <div class="disaster-icon">🌊</div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2>Flood</h2>
+                            <p>Learn about flood safety and preparedness.</p>
+                        </div>
+
+                        <span class="view-more">View details →</span>
+                    </a>
+
+
+                    <!-- Earthquake -->
+                    <a href="#" class="disaster-card">
+                        <div class="disaster-image">
+                            <div class="disaster-icon">🌍</div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2>Earthquake</h2>
+                            <p>Know what to do before and during an earthquake.</p>
+                        </div>
+
+                        <span class="view-more">View details →</span>
+                    </a>
+
+
+                    <!-- Cyclone -->
+                    <a href="#" class="disaster-card">
+                        <div class="disaster-image">
+                            <div class="disaster-icon">🌀</div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2>Cyclone</h2>
+                            <p>Understand cyclone warnings and safety measures.</p>
+                        </div>
+
+                        <span class="view-more">View details →</span>
+                    </a>
+
+
+                    <!-- Fire -->
+                    <a href="#" class="disaster-card">
+                        <div class="disaster-image">
+                            <div class="disaster-icon">🔥</div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2>Fire</h2>
+                            <p>Learn essential fire prevention and safety tips.</p>
+                        </div>
+
+                        <span class="view-more">View details →</span>
+                    </a>
+
+
+                    <!-- Landslide -->
+                    <a href="#" class="disaster-card">
+                        <div class="disaster-image">
+                            <div class="disaster-icon">⛰️</div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2>Landslide</h2>
+                            <p>Learn how to identify and respond to landslides.</p>
+                        </div>
+
+                        <span class="view-more">View details →</span>
+                    </a>
+
+
+                    <!-- Drought -->
+                    <a href="#" class="disaster-card">
+                        <div class="disaster-image">
+                            <div class="disaster-icon">☀️</div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2>Drought</h2>
+                            <p>Understand drought conditions and water safety.</p>
+                        </div>
+
+                        <span class="view-more">View details →</span>
+                    </a>
+
+
+                    <!-- Thunderstorm -->
+                    <a href="#" class="disaster-card">
+                        <div class="disaster-image">
+                            <div class="disaster-icon">⛈️</div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2>Thunderstorm</h2>
+                            <p>Stay safe during lightning and severe storms.</p>
+                        </div>
+
+                        <span class="view-more">View details →</span>
+                    </a>
+
+
+                    <!-- Heatwave -->
+                    <a href="#" class="disaster-card">
+                        <div class="disaster-image">
+                            <div class="disaster-icon">🌡️</div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2>Heatwave</h2>
+                            <p>Learn how to protect yourself from extreme heat.</p>
+                        </div>
+
+                        <span class="view-more">View details →</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Back to Home -->
+
+        <div class="back-container">
+
+            <a href="{{ url_for('home') }}"
+               class="back-button">
+
+                ← Back to Home
+
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 DisasterSafe. Disaster Preparedness & Awareness System.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
