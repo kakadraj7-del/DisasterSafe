@@ -37,6 +37,11 @@ def sign_in():
     return render_template("sign_in.html")
 
 
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+
+
 # =========================
 # RUN APPLICATION
 # =========================

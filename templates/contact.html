@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="DisasterSafe - Contact information">
+
+    <title>Contact | DisasterSafe</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/contact.css') }}">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="site-header">
+
+        <div class="navbar">
+
+            <a href="{{ url_for('home') }}"
+               class="brand">
+
+                <span class="brand-icon">!</span>
+                <span>Disaster Alert</span>
+
+            </a>
+
+
+            <input type="checkbox"
+                   id="menu-toggle"
+                   class="menu-toggle">
+
+
+            <label for="menu-toggle"
+                   class="menu-button"
+                   aria-label="Open navigation menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </label>
+
+
+            <nav class="nav-links">
+
+                <a href="{{ url_for('home') }}">
+                    Home
+                </a>
+
+                <a href="{{ url_for('sign_in') }}">
+                    Sign in
+                </a>
+
+                <a href="#">
+                    Tips
+                </a>
+
+                <a href="#">
+                    Resources
+                </a>
+
+                <a href="{{ url_for('contact') }}"
+                   class="active">
+                    Contact
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         CONTACT PAGE
+    ========================== -->
+
+    <main>
+
+        <section class="contact-hero">
+
+            <div class="contact-hero-content">
+
+                <span class="page-label">
+                    DISASTERSAFE
+                </span>
+
+                <h1>
+                    Contact Us
+                </h1>
+
+                <p>
+                    Have questions or suggestions?
+                    Feel free to get in touch with
+                    our team.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT PEOPLE
+        ========================== -->
+
+        <section class="contact-section">
+
+            <h2>
+                Get in Touch
+            </h2>
+
+            <p class="contact-intro">
+                You can contact our team using the
+                information below.
+            </p>
+
+
+            <div class="contact-grid">
+
+
+                <!-- Contact Person 1 -->
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        👤
+                    </div>
+
+                    <div class="contact-details">
+
+                        <h3>
+                            Project Coordinator
+                        </h3>
+
+                        <p>
+                            DisasterSafe Team
+                        </p>
+
+                        <a href="mailto:example1@email.com">
+                            example1@email.com
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Contact Person 2 -->
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        👤
+                    </div>
+
+                    <div class="contact-details">
+
+                        <h3>
+                            Technical Support
+                        </h3>
+
+                        <p>
+                            DisasterSafe Team
+                        </p>
+
+                        <a href="mailto:example2@email.com">
+                            example2@email.com
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Back to Home -->
+
+        <div class="back-container">
+
+            <a href="{{ url_for('home') }}"
+               class="back-button">
+
+                ← Back to Home
+
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <p>
+            © 2026 DisasterSafe
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
