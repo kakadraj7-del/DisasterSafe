@@ -3,13 +3,18 @@ from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__)
 
 
+# =========================
+# HOME PAGE
+# =========================
+
 @app.route("/")
 def home():
     return render_template("index.html")
 
-@app.route("/")
-def home():
-    return redirect(url_for("sign_in"))
+
+# =========================
+# SIGN IN PAGE
+# =========================
 
 @app.route("/sign-in", methods=["GET", "POST"])
 def sign_in():
@@ -26,10 +31,15 @@ def sign_in():
         print("Password:", password)
         print("Location:", location)
 
+        # Temporary
         return redirect(url_for("home"))
 
     return render_template("sign_in.html")
 
+
+# =========================
+# RUN APPLICATION
+# =========================
 
 if __name__ == "__main__":
     app.run(debug=True)
