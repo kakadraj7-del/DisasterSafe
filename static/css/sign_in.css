@@ -1,0 +1,339 @@
+/* =========================================================
+   DISASTERSAFE - SIGN IN PAGE
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+body {
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f4f8fc;
+
+    color: #08295f;
+}
+
+
+/* =========================================================
+   SIGN IN PAGE
+========================================================= */
+
+.signin-page {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px 20px;
+}
+
+
+/* =========================================================
+   SIGN IN CARD
+========================================================= */
+
+.signin-card {
+    width: 100%;
+    max-width: 430px;
+
+    padding: 35px;
+
+    background: #ffffff;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 30px rgba(8, 41, 95, 0.12);
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.signin-brand {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-bottom: 28px;
+}
+
+.brand-icon {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: #08295f;
+
+    color: #ffffff;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.signin-brand h1 {
+    color: #08295f;
+
+    font-size: 22px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.signin-heading {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+.signin-heading h2 {
+    margin-bottom: 8px;
+
+    font-size: 24px;
+
+    color: #08295f;
+}
+
+.signin-heading p {
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.signin-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.form-group label {
+    color: #08295f;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+.form-group input {
+    width: 100%;
+
+    height: 46px;
+
+    padding: 0 14px;
+
+    border: 1px solid #d5deea;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #1e293b;
+
+    font-size: 14px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder {
+    color: #94a3b8;
+}
+
+.form-group input:focus {
+    border-color: #08295f;
+
+    box-shadow:
+        0 0 0 3px rgba(8, 41, 95, 0.08);
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.signin-button {
+    width: 100%;
+
+    height: 46px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #08295f;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.signin-button:hover {
+    background: #0b397f;
+
+    transform: translateY(-1px);
+}
+
+.signin-button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   BACK HOME
+========================================================= */
+
+.back-home {
+    display: block;
+
+    margin-top: 22px;
+
+    text-align: center;
+
+    color: #08295f;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.back-home:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .signin-page {
+        padding: 20px 15px;
+    }
+
+    .signin-card {
+        padding: 27px 22px;
+
+        border-radius: 12px;
+    }
+
+    .signin-brand {
+        margin-bottom: 22px;
+    }
+
+    .signin-heading h2 {
+        font-size: 21px;
+    }
+
+    .signin-heading p {
+        font-size: 13px;
+    }
+
+    .form-group input {
+        height: 45px;
+    }
+
+    .signin-button {
+        height: 45px;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .signin-card {
+        padding: 24px 18px;
+    }
+
+    .signin-brand h1 {
+        font-size: 20px;
+    }
+
+    .signin-heading h2 {
+        font-size: 19px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+    }
+
+    .form-group input {
+        font-size: 13px;
+    }
+
+}
