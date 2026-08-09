@@ -1469,29 +1469,23 @@ main {
 
 .preparedness-section {
     margin: 0 24px 30px;
-
     min-height: 90px;
-
     padding: 12px 18px;
 
     display: flex;
-
     align-items: center;
-
     gap: 18px;
 
     background: #08295f;
-
     border-radius: 8px;
 
-    box-shadow:
-        0 3px 8px rgba(8, 41, 95, 0.08);
+    box-shadow: 0 3px 8px rgba(8, 41, 95, 0.08);
 }
 
 
-/* ---------------------------------------------------------
+/* =========================================================
    SCORE CIRCLE
---------------------------------------------------------- */
+========================================================= */
 
 .preparedness-score {
     flex-shrink: 0;
@@ -1504,21 +1498,16 @@ main {
     border-radius: 50%;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
-    background:
-        conic-gradient(
-            #5bd36c 0deg 259deg,
-            rgba(255, 255, 255, 0.15) 259deg 360deg
-        );
+    background: conic-gradient(
+        #5bd36c 0deg 259deg,
+        rgba(255, 255, 255, 0.15) 259deg 360deg
+    );
 
     position: relative;
 }
-
-
-/* Create the dark center */
 
 .score-circle-inner {
     width: 50px;
@@ -1527,29 +1516,25 @@ main {
     border-radius: 50%;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
     background: #08295f;
-
     color: #ffffff;
 }
 
 .score-circle-inner span {
     font-size: 16px;
-
     font-weight: 700;
 }
 
 
-/* ---------------------------------------------------------
+/* =========================================================
    PREPAREDNESS TEXT
---------------------------------------------------------- */
+========================================================= */
 
 .preparedness-content {
     flex: 1;
-
     min-width: 0;
 }
 
@@ -1559,7 +1544,6 @@ main {
     color: #ffffff;
 
     font-size: 13px;
-
     font-weight: 700;
 }
 
@@ -1569,37 +1553,31 @@ main {
     color: rgba(255, 255, 255, 0.82);
 
     font-size: 9px;
-
     line-height: 1.5;
 }
 
 
-/* ---------------------------------------------------------
+/* =========================================================
    CHECKLIST BUTTON
---------------------------------------------------------- */
+========================================================= */
 
 .checklist-button {
     min-height: 34px;
-
     padding: 0 12px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
     gap: 10px;
-
     flex-shrink: 0;
 
     border: 1px solid rgba(255, 255, 255, 0.65);
-
     border-radius: 6px;
 
     color: #ffffff;
 
     font-size: 10px;
-
     font-weight: 500;
 
     transition:
@@ -1610,7 +1588,6 @@ main {
 
 .checklist-button:hover {
     background: rgba(255, 255, 255, 0.08);
-
     border-color: #ffffff;
 
     transform: translateY(-1px);
@@ -1618,7 +1595,6 @@ main {
 
 .checklist-arrow {
     font-size: 17px;
-
     line-height: 1;
 }
 
@@ -1633,7 +1609,6 @@ main {
         margin: 0 16px 25px;
 
         min-height: 85px;
-
         padding: 11px 13px;
 
         gap: 12px;
@@ -1678,7 +1653,6 @@ main {
     .checklist-arrow {
         font-size: 15px;
     }
-
 }
 
 
@@ -1715,8 +1689,6 @@ main {
 
     .checklist-button {
         padding: 0 7px;
-
         font-size: 8px;
     }
-
 }
