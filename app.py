@@ -45,6 +45,10 @@ def contact():
 def preparedness():
     return render_template("preparedness.html")
 
+@app.route("/guidelines")
+def guidelines():
+    return render_template("guidelines.html")
+
 
 # =========================
 # RUN APPLICATION

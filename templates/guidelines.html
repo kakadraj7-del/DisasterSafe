@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="DisasterSafe - General disaster safety guidelines.">
+
+    <title>Guidelines | DisasterSafe</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/guidelines.css') }}">
+
+</head>
+
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="site-header">
+
+        <div class="navbar">
+
+            <a href="{{ url_for('home') }}"
+               class="brand">
+
+                <span class="brand-icon">!</span>
+
+                <span>DisasterSafe</span>
+
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="{{ url_for('home') }}">
+                    Home
+                </a>
+
+                <a href="{{ url_for('preparedness') }}">
+                    Preparedness
+                </a>
+
+                <a href="{{ url_for('guidelines') }}"
+                   class="active">
+                    Guidelines
+                </a>
+
+                <a href="#">
+                    Emergency
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main>
+
+        <!-- Page Introduction -->
+
+        <section class="guidelines-intro">
+
+            <div class="container">
+
+                <p class="section-label">
+                    DISASTER SAFETY
+                </p>
+
+                <h1>
+                    Safety Guidelines
+                </h1>
+
+                <p class="intro-text">
+                    Simple steps to help you stay safe
+                    before, during, and after a disaster.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             GUIDELINES
+        ========================== -->
+
+        <section class="guidelines-section">
+
+            <div class="container">
+
+                <div class="guidelines-grid">
+
+
+                    <!-- =========================
+                         DO'S
+                    ========================== -->
+
+                    <div class="guideline-card dos-card">
+
+                        <div class="card-heading">
+
+                            <div class="heading-icon">
+                                ✓
+                            </div>
+
+                            <div>
+
+                                <h2>
+                                    Do's
+                                </h2>
+
+                                <p>
+                                    Stay prepared and act safely.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <ul class="guideline-list">
+
+                            <li>
+                                <span>✓</span>
+                                Stay calm.
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Follow official alerts.
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Keep an emergency kit ready.
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Keep your phone charged.
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Move to a safe area.
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Stay connected with family.
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Keep emergency numbers handy.
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Help those who need assistance.
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Protect important documents.
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Wait for the official all-clear.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- =========================
+                         AVOID
+                    ========================== -->
+
+                    <div class="guideline-card avoid-card">
+
+                        <div class="card-heading">
+
+                            <div class="heading-icon">
+                                !
+                            </div>
+
+                            <div>
+
+                                <h2>
+                                    Avoid
+                                </h2>
+
+                                <p>
+                                    Stay away from unnecessary risks.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <ul class="guideline-list">
+
+                            <li>
+                                <span>!</span>
+                                Panic and rushing.
+                            </li>
+
+                            <li>
+                                <span>!</span>
+                                Ignoring warnings.
+                            </li>
+
+                            <li>
+                                <span>!</span>
+                                Sharing unverified news.
+                            </li>
+
+                            <li>
+                                <span>!</span>
+                                Entering damaged buildings.
+                            </li>
+
+                            <li>
+                                <span>!</span>
+                                Touching fallen wires.
+                            </li>
+
+                            <li>
+                                <span>!</span>
+                                Blocking emergency routes.
+                            </li>
+
+                            <li>
+                                <span>!</span>
+                                Wasting essential supplies.
+                            </li>
+
+                            <li>
+                                <span>!</span>
+                                Returning too early.
+                            </li>
+
+                            <li>
+                                <span>!</span>
+                                Using elevators during evacuation.
+                            </li>
+
+                            <li>
+                                <span>!</span>
+                                Taking unnecessary risks.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- Important Notice -->
+
+                <div class="safety-note">
+
+                    <div class="note-icon">
+                        i
+                    </div>
+
+                    <p>
+                        Always follow instructions from local
+                        authorities and emergency services during
+                        an actual disaster.
+                    </p>
+
+                </div>
+
+
+                <!-- Back Button -->
+
+                <div class="back-container">
+
+                    <a href="{{ url_for('home') }}"
+                       class="back-button">
+
+                        ← Back to Home
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <p>
+            © 2026 DisasterSafe.
+            Disaster Preparedness & Awareness System.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

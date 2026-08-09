@@ -1,0 +1,669 @@
+/* =========================================================
+   DISASTERSAFE - GUIDELINES PAGE
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #ffffff;
+
+    color: #142552;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   COMMON CONTAINER
+========================================================= */
+
+.container {
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+    width: 100%;
+
+    background: #142552;
+}
+
+
+.navbar {
+    max-width: 1100px;
+
+    min-height: 64px;
+
+    margin: 0 auto;
+
+    padding: 0 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* Logo */
+
+.brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+.brand-icon {
+    width: 27px;
+
+    height: 27px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 7px;
+
+    background: #ef4658;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 800;
+}
+
+
+/* Navigation */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 32px;
+}
+
+
+.nav-links a {
+    position: relative;
+
+    padding: 22px 0;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+
+.nav-links a:hover {
+    opacity: 0.85;
+}
+
+
+.nav-links a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    height: 2px;
+
+    background: #ef4658;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.guidelines-intro {
+    padding: 55px 0 50px;
+
+    text-align: center;
+
+    background: #fff4f2;
+}
+
+
+.section-label {
+    margin-bottom: 8px;
+
+    color: #ef4658;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+.guidelines-intro h1 {
+    margin-bottom: 12px;
+
+    color: #142552;
+
+    font-size: 38px;
+
+    line-height: 1.2;
+}
+
+
+.intro-text {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    color: #687184;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   GUIDELINES SECTION
+========================================================= */
+
+.guidelines-section {
+    padding: 50px 0 45px;
+
+    background: #ffffff;
+}
+
+
+.guidelines-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 24px;
+}
+
+
+/* =========================================================
+   GUIDELINE CARDS
+========================================================= */
+
+.guideline-card {
+    padding: 25px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e2e7ef;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 5px 18px rgba(20, 37, 82, 0.06);
+}
+
+
+/* Do card */
+
+.dos-card {
+    border-top: 4px solid #5bd36c;
+}
+
+
+/* Avoid card */
+
+.avoid-card {
+    border-top: 4px solid #ef4658;
+}
+
+
+/* =========================================================
+   CARD HEADING
+========================================================= */
+
+.card-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding-bottom: 18px;
+
+    margin-bottom: 4px;
+
+    border-bottom: 1px solid #edf0f5;
+}
+
+
+.heading-icon {
+    width: 42px;
+
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+
+.dos-card .heading-icon {
+    background: #eaf8ed;
+
+    color: #2eaa48;
+}
+
+
+.avoid-card .heading-icon {
+    background: #fff0f1;
+
+    color: #ef4658;
+}
+
+
+.card-heading h2 {
+    margin-bottom: 2px;
+
+    color: #142552;
+
+    font-size: 21px;
+}
+
+
+.card-heading p {
+    color: #7a8291;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   GUIDELINE LIST
+========================================================= */
+
+.guideline-list {
+    list-style: none;
+}
+
+
+.guideline-list li {
+    min-height: 43px;
+
+    padding: 10px 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    border-bottom: 1px solid #f0f2f6;
+
+    color: #3d4658;
+
+    font-size: 13px;
+}
+
+
+.guideline-list li:last-child {
+    border-bottom: none;
+}
+
+
+.guideline-list li span {
+    width: 22px;
+
+    height: 22px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+.dos-card .guideline-list li span {
+    background: #eaf8ed;
+
+    color: #2eaa48;
+}
+
+
+.avoid-card .guideline-list li span {
+    background: #fff0f1;
+
+    color: #ef4658;
+}
+
+
+/* =========================================================
+   SAFETY NOTE
+========================================================= */
+
+.safety-note {
+    margin-top: 28px;
+
+    padding: 17px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    background: #f5f8ff;
+
+    border: 1px solid #dfe7f7;
+
+    border-radius: 9px;
+}
+
+
+.note-icon {
+    width: 30px;
+
+    height: 30px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #dfe9ff;
+
+    color: #315eb8;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+.safety-note p {
+    color: #596579;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.back-container {
+    padding-top: 30px;
+
+    text-align: center;
+}
+
+
+.back-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 10px 17px;
+
+    border-radius: 6px;
+
+    background: #142552;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.back-button:hover {
+    background: #0b1c48;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+    padding: 20px 24px;
+
+    background: #142552;
+
+    color: rgba(255, 255, 255, 0.75);
+
+    text-align: center;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        min-height: 58px;
+
+        padding: 0 18px;
+    }
+
+
+    .nav-links {
+        gap: 18px;
+    }
+
+
+    .nav-links a {
+        font-size: 12px;
+
+        padding: 21px 0;
+    }
+
+
+    .guidelines-intro {
+        padding: 42px 0 38px;
+    }
+
+
+    .guidelines-intro h1 {
+        font-size: 30px;
+    }
+
+
+    .intro-text {
+        font-size: 13px;
+    }
+
+
+    .guidelines-section {
+        padding: 35px 0 35px;
+    }
+
+
+    .guidelines-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .guideline-card {
+        padding: 20px;
+    }
+
+
+    .card-heading h2 {
+        font-size: 19px;
+    }
+
+
+    .guideline-list li {
+        font-size: 12px;
+    }
+
+
+    .safety-note {
+        align-items: flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    .navbar {
+        padding: 0 14px;
+    }
+
+
+    .brand {
+        font-size: 13px;
+    }
+
+
+    .nav-links {
+        gap: 12px;
+    }
+
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+
+    .guidelines-intro h1 {
+        font-size: 27px;
+    }
+
+
+    .guideline-card {
+        padding: 17px;
+    }
+
+
+    .guideline-list li {
+        min-height: 40px;
+
+        padding: 9px 0;
+
+        font-size: 11px;
+    }
+
+
+    .guideline-list li span {
+        width: 20px;
+
+        height: 20px;
+    }
+
+
+    .safety-note {
+        padding: 14px;
+
+        gap: 10px;
+    }
+
+
+    .safety-note p {
+        font-size: 11px;
+    }
+
+}
