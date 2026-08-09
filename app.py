@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
@@ -26,9 +26,7 @@ def sign_in():
         print("Password:", password)
         print("Location:", location)
 
-        # Database logic will be added later.
-
-        return "Account submitted successfully!"
+        return redirect(url_for("home_page"))
 
     return render_template("sign_in.html")
 
