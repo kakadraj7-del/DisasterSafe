@@ -29,7 +29,7 @@
         <a href="{{ url_for('home') }}"
            class="logo">
 
-            DisasterSafe
+            Disaster<span>Safe</span>
 
         </a>
 
@@ -88,15 +88,14 @@
 
 
             <h1 id="disaster-title">
-                Flood
+                Loading...
             </h1>
 
 
             <p class="disaster-description"
                id="disaster-description">
 
-                Learn how to stay safe before, during,
-                and after a disaster.
+                Loading disaster information...
 
             </p>
 
@@ -111,7 +110,6 @@
     <section class="safety-section">
 
         <div class="container">
-
 
             <div class="safety-grid">
 
@@ -141,20 +139,10 @@
                     </div>
 
 
+                    <!-- JavaScript will insert
+                         Before information here -->
+
                     <ul id="before-list">
-
-                        <li>
-                            Prepare an emergency kit.
-                        </li>
-
-                        <li>
-                            Follow official warnings.
-                        </li>
-
-                        <li>
-                            Know your evacuation route.
-                        </li>
-
                     </ul>
 
                 </article>
@@ -186,20 +174,10 @@
                     </div>
 
 
+                    <!-- JavaScript will insert
+                         During information here -->
+
                     <ul id="during-list">
-
-                        <li>
-                            Stay calm and follow official instructions.
-                        </li>
-
-                        <li>
-                            Move to a safe location.
-                        </li>
-
-                        <li>
-                            Keep your phone charged.
-                        </li>
-
                     </ul>
 
                 </article>
@@ -231,27 +209,16 @@
                     </div>
 
 
+                    <!-- JavaScript will insert
+                         After information here -->
+
                     <ul id="after-list">
-
-                        <li>
-                            Wait for the official all-clear.
-                        </li>
-
-                        <li>
-                            Stay away from damaged areas.
-                        </li>
-
-                        <li>
-                            Follow local authority guidance.
-                        </li>
-
                     </ul>
 
                 </article>
 
 
             </div>
-
 
         </div>
 
@@ -298,7 +265,15 @@
 
 
 
+<!-- JavaScript -->
+
+<script src="{{ url_for('static', filename='js/preparedness_info.js') }}">
+</script>
+
+
 </body>
 
 </html>
+
+
 
