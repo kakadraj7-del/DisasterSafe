@@ -217,6 +217,36 @@ body {
     font-weight: 700;
 }
 
+/* ---------- Back Button ---------- */
+
+.back-container {
+    padding-top: 30px;
+    text-align: center;
+}
+
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 17px;
+    border-radius: 6px;
+    background: #142552;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.back-button:hover {
+    background: #0b1c48;
+    transform: translateY(-1px);
+}
+
 
 /* ---------- Footer ---------- */
 
