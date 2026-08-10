@@ -137,17 +137,12 @@ body {
     border: 1px solid #e5e7eb;
     border-radius: 18px;
     overflow: hidden;
-
     text-decoration: none;
     color: inherit;
-
     display: flex;
     flex-direction: column;
-
     min-height: 390px;
-
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-
     transition:
         transform 0.25s ease,
         box-shadow 0.25s ease,
@@ -178,19 +173,13 @@ body {
 .disaster-icon {
     width: 120px;
     height: 120px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 50%;
-
     background: #ffffff;
-
     font-size: 72px;
-
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-
     transition: transform 0.3s ease;
 }
 
