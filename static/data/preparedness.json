@@ -1,0 +1,243 @@
+
+{
+    "flood": {
+        "title": "Flood",
+        "icon": "🌊",
+        "description": "Floods occur when water overflows onto normally dry land. They can happen because of heavy rainfall, overflowing rivers, storms, or poor drainage.",
+
+        "before": [
+            "Keep an emergency kit ready.",
+            "Store important documents in waterproof containers.",
+            "Keep drinking water and essential medicines available.",
+            "Know the safest higher ground or evacuation area near you.",
+            "Follow official weather and disaster alerts."
+        ],
+
+        "during": [
+            "Stay calm and move to higher ground if instructed.",
+            "Follow evacuation orders from authorities.",
+            "Keep your phone charged and stay connected.",
+            "Avoid walking or swimming through flood water.",
+            "Stay away from electrical equipment and fallen power lines."
+        ],
+
+        "after": [
+            "Wait for the official all-clear before returning home.",
+            "Avoid standing water because it may be contaminated or electrically dangerous.",
+            "Check your surroundings for damaged structures.",
+            "Use safe drinking water only.",
+            "Report emergencies or damaged infrastructure to authorities."
+        ]
+    },
+
+    "earthquake": {
+        "title": "Earthquake",
+        "icon": "🌍",
+        "description": "An earthquake is the sudden shaking of the ground caused by movement within the Earth's crust.",
+
+        "before": [
+            "Prepare an emergency kit.",
+            "Identify safe places inside your home or building.",
+            "Secure heavy furniture and objects.",
+            "Keep important documents and emergency contacts accessible.",
+            "Practice Drop, Cover, and Hold On."
+        ],
+
+        "during": [
+            "Drop to the ground.",
+            "Take cover under a sturdy table or desk.",
+            "Hold on until the shaking stops.",
+            "Stay away from windows and glass.",
+            "Do not use elevators."
+        ],
+
+        "after": [
+            "Check yourself and others for injuries.",
+            "Move carefully away from damaged buildings.",
+            "Be prepared for aftershocks.",
+            "Do not enter damaged structures unless authorities say it is safe.",
+            "Follow official instructions."
+        ]
+    },
+
+    "cyclone": {
+        "title": "Cyclone",
+        "icon": "🌀",
+        "description": "A cyclone is a powerful rotating storm that can bring strong winds, heavy rainfall, flooding, and storm surges.",
+
+        "before": [
+            "Monitor official cyclone warnings.",
+            "Prepare an emergency kit and sufficient drinking water.",
+            "Secure loose objects around your home.",
+            "Keep important documents in waterproof containers.",
+            "Know your nearest evacuation shelter."
+        ],
+
+        "during": [
+            "Stay indoors and away from windows.",
+            "Keep doors and windows securely closed.",
+            "Follow evacuation instructions from authorities.",
+            "Avoid travelling unless absolutely necessary.",
+            "Stay updated through official alerts."
+        ],
+
+        "after": [
+            "Wait for the official all-clear.",
+            "Avoid fallen power lines and damaged buildings.",
+            "Do not travel through flooded roads.",
+            "Check family members and neighbours if it is safe.",
+            "Follow instructions from local authorities."
+        ]
+    },
+
+    "fire": {
+        "title": "Fire",
+        "icon": "🔥",
+        "description": "Fires can spread quickly and produce dangerous heat and smoke. Early action and safe evacuation are essential.",
+
+        "before": [
+            "Install and maintain smoke alarms.",
+            "Keep fire extinguishers accessible.",
+            "Keep electrical wiring and appliances in good condition.",
+            "Know the emergency exits in your home or workplace.",
+            "Practice a fire evacuation plan."
+        ],
+
+        "during": [
+            "Raise the alarm and call emergency services.",
+            "Leave the building using the safest available exit.",
+            "Stay low if there is smoke.",
+            "Never use an elevator during a fire.",
+            "If your clothes catch fire, stop, drop, and roll."
+        ],
+
+        "after": [
+            "Do not return to the building until authorities declare it safe.",
+            "Avoid damaged electrical equipment.",
+            "Seek medical attention for injuries or smoke exposure.",
+            "Report hazards to authorities.",
+            "Stay away from unstable structures."
+        ]
+    },
+
+    "landslide": {
+        "title": "Landslide",
+        "icon": "⛰️",
+        "description": "A landslide is the movement of rock, soil, or debris down a slope. Heavy rainfall, earthquakes, and unstable terrain can trigger landslides.",
+
+        "before": [
+            "Learn whether your area is at risk of landslides.",
+            "Monitor heavy rainfall and official warnings.",
+            "Know your evacuation route.",
+            "Avoid building or staying near unstable slopes.",
+            "Keep an emergency kit ready."
+        ],
+
+        "during": [
+            "Move away from the path of the landslide immediately.",
+            "Follow evacuation instructions.",
+            "Stay alert for additional landslides.",
+            "Avoid valleys and low-lying areas during severe conditions.",
+            "Do not approach an active landslide."
+        ],
+
+        "after": [
+            "Stay away from the affected area.",
+            "Watch for additional landslides or falling debris.",
+            "Report damaged roads and infrastructure.",
+            "Do not enter damaged buildings.",
+            "Follow instructions from local authorities."
+        ]
+    },
+
+    "drought": {
+        "title": "Drought",
+        "icon": "☀️",
+        "description": "Drought is a prolonged period of unusually low rainfall that can lead to water shortages and affect agriculture and communities.",
+
+        "before": [
+            "Store water safely when advised by authorities.",
+            "Use water efficiently.",
+            "Repair leaking taps and pipes.",
+            "Learn about local water conservation measures.",
+            "Keep emergency drinking water available."
+        ],
+
+        "during": [
+            "Follow local water-use restrictions.",
+            "Prioritize drinking water and essential needs.",
+            "Avoid unnecessary water consumption.",
+            "Protect yourself from extreme heat.",
+            "Follow official guidance about water safety."
+        ],
+
+        "after": [
+            "Continue conserving water until supplies recover.",
+            "Use water responsibly.",
+            "Follow updates from local authorities.",
+            "Check stored water before consumption.",
+            "Support community water conservation efforts."
+        ]
+    },
+
+    "thunderstorm": {
+        "title": "Thunderstorm",
+        "icon": "⛈️",
+        "description": "Thunderstorms can produce lightning, strong winds, heavy rainfall, hail, and sometimes flash flooding.",
+
+        "before": [
+            "Monitor weather forecasts and warnings.",
+            "Secure loose outdoor objects.",
+            "Keep windows and doors closed.",
+            "Keep an emergency kit ready.",
+            "Bring outdoor equipment indoors when possible."
+        ],
+
+        "during": [
+            "Stay indoors during lightning activity.",
+            "Stay away from windows.",
+            "Avoid using wired electrical equipment.",
+            "Do not stand under isolated trees.",
+            "Avoid flooded roads and areas."
+        ],
+
+        "after": [
+            "Wait until the storm has completely passed.",
+            "Avoid fallen power lines.",
+            "Check for property damage from a safe location.",
+            "Avoid standing water.",
+            "Follow official instructions."
+        ]
+    },
+
+    "heatwave": {
+        "title": "Heatwave",
+        "icon": "🌡️",
+        "description": "A heatwave is a period of unusually high temperatures that can cause dehydration, heat exhaustion, and other heat-related problems.",
+
+        "before": [
+            "Keep drinking water available.",
+            "Prepare lightweight and comfortable clothing.",
+            "Check weather forecasts during extreme heat.",
+            "Keep your home as cool as possible.",
+            "Plan outdoor activities during cooler parts of the day."
+        ],
+
+        "during": [
+            "Drink plenty of water.",
+            "Stay in a cool or shaded place.",
+            "Avoid strenuous outdoor activities during peak heat.",
+            "Wear light-coloured, loose-fitting clothing.",
+            "Check on elderly people, children, and vulnerable individuals."
+        ],
+
+        "after": [
+            "Continue drinking enough fluids.",
+            "Allow your body to cool and recover.",
+            "Watch for symptoms of heat-related illness.",
+            "Continue following local heat advisories.",
+            "Resume strenuous activities gradually."
+        ]
+    }
+}
+
