@@ -45,32 +45,7 @@ def home():
 # SIGN IN PAGE
 # =========================
 
-@app.route("/sign-in", methods=["GET", "POST"])
-def sign_in():
-
-    if request.method == "POST":
-
-        name = request.form.get("name")
-        email = request.form.get("email")
-        password = request.form.get("password")
-        location = request.form.get("location")
-
-        # Create new user
-        new_user = User(
-            name=name,
-            email=email,
-            password=password,
-            location=location
-        )
-
-        db.session.add(new_user)
-        db.session.commit()
-
-        print("User saved successfully!")
-
-        return redirect(url_for("home"))
-
-    return render_template("sign_in.html")
+@app.route("/sign-in", methods=["GET", "POST"]) def sign_in(): if request.method == "POST": name = request.form.get("name") email = request.form.get("email") password = request.form.get("password") location = request.form.get("location") # Check if email already exists existing_user = User.query.filter_by(email=email).first() if existing_user: return "Email already registered. Please use a different email." # Create new user new_user = User( name=name, email=email, password=password, location=location ) db.session.add(new_user) db.session.commit() print("User saved successfully!") return redirect(url_for("home")) return render_template("sign_in.html")
 
 
 # =========================
