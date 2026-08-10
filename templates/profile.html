@@ -1,0 +1,108 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile - DisasterSafe</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/profile.css') }}">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="navbar">
+
+            <a href="{{ url_for('home') }}" class="brand">
+                DisasterSafe
+            </a>
+
+            <nav class="nav-links">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('profile') }}">Profile</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main class="profile-container">
+
+        <div class="profile-card">
+
+            <div class="profile-icon">
+                👤
+            </div>
+
+            <h1>My Profile</h1>
+
+            <p class="profile-subtitle">
+                Manage your DisasterSafe account information
+            </p>
+
+
+            <form method="POST"
+                  action="{{ url_for('profile') }}">
+
+                <!-- Name - View Only -->
+                <div class="profile-item">
+                    <label for="name">Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        value="{{ user.name }}"
+                        readonly
+                    >
+                </div>
+
+
+                <!-- Email - Editable -->
+                <div class="profile-item">
+                    <label for="email">Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        value="{{ user.email }}"
+                        required
+                    >
+                </div>
+
+
+                <!-- Location - Editable -->
+                <div class="profile-item">
+                    <label for="location">Location</label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        name="location"
+                        value="{{ user.location }}"
+                        required
+                    >
+                </div>
+
+
+                <button type="submit" class="save-button">
+                    Save Changes
+                </button>
+
+            </form>
+
+
+            <a href="{{ url_for('home') }}" class="back-button">
+                Back to Home
+            </a>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
+```

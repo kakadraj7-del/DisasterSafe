@@ -1,21 +1,25 @@
 import os
-from flask import Flask, render_template, request, redirect, url_for
+
+from flask import Flask, render_template, request, redirect, url_for, session
 from flask_sqlalchemy import SQLAlchemy
 
+
 app = Flask(__name__)
+
+app.secret_key = os.environ.get(
+    "SECRET_KEY",
+    "disastersafe-secret-key"
+)
+
 
 # =========================
 # DATABASE CONFIGURATION
 # =========================
 
 app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL")
-
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 db = SQLAlchemy(app)
-
-with app.app_context():
-    db.create_all()
 
 
 # =========================
@@ -33,6 +37,14 @@ class User(db.Model):
 
 
 # =========================
+# CREATE DATABASE TABLES
+# =========================
+
+with app.app_context():
+    db.create_all()
+
+
+# =========================
 # HOME PAGE
 # =========================
 
@@ -42,7 +54,7 @@ def home():
 
 
 # =========================
-# SIGN IN PAGE
+# SIGN IN / REGISTER PAGE
 # =========================
 
 @app.route("/sign-in", methods=["GET", "POST"])
@@ -72,11 +84,59 @@ def sign_in():
         db.session.add(new_user)
         db.session.commit()
 
+        # Remember the logged-in user
+        session["user_id"] = new_user.id
+
         print("User saved successfully!")
 
         return redirect(url_for("home"))
 
     return render_template("sign_in.html")
+
+
+# =========================
+# PROFILE PAGE
+# =========================
+
+@app.route("/profile", methods=["GET", "POST"])
+def profile():
+
+    user_id = session.get("user_id")
+
+    # User is not logged in
+    if not user_id:
+        return redirect(url_for("sign_in"))
+
+    # Find logged-in user
+    user = User.query.get(user_id)
+
+    if not user:
+        session.pop("user_id", None)
+        return redirect(url_for("sign_in"))
+
+    # Update email and location
+    if request.method == "POST":
+
+        email = request.form.get("email")
+        location = request.form.get("location")
+
+        # Check if another user already has this email
+        existing_user = User.query.filter(
+            User.email == email,
+            User.id != user.id
+        ).first()
+
+        if existing_user:
+            return "That email is already registered."
+
+        user.email = email
+        user.location = location
+
+        db.session.commit()
+
+        return redirect(url_for("profile"))
+
+    return render_template("profile.html", user=user)
 
 
 # =========================
@@ -109,16 +169,9 @@ def emergency_contacts():
 
 
 # =========================
-# CREATE DATABASE TABLES
-# =========================
-
-with app.app_context():
-    db.create_all()
-
-
-# =========================
 # RUN APPLICATION
 # =========================
 
 if __name__ == "__main__":
     app.run(debug=True)
+
