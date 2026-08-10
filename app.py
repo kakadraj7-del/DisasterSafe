@@ -168,6 +168,11 @@ def emergency_contacts():
     return render_template("emergency_contacts.html")
 
 
+@app.route("/preparedness-info")
+def preparedness_info():
+    return render_template("preparedness_info.html")
+
+
 # =========================
 # RUN APPLICATION
 # =========================

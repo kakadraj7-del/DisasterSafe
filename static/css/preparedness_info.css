@@ -1,0 +1,446 @@
+
+/* =========================================
+   DisasterSafe - Disaster Information
+   ========================================= */
+
+
+/* ---------- Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fa;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+
+
+/* ---------- Common Container ---------- */
+
+.container {
+    width: min(1120px, 92%);
+    margin: 0 auto;
+}
+
+
+
+/* =========================================
+   Header
+   ========================================= */
+
+.header {
+    background: #142552;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.header-content {
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+.logo {
+    text-decoration: none;
+    color: #ffffff;
+
+    font-size: 25px;
+    font-weight: 800;
+
+    letter-spacing: -0.5px;
+}
+
+
+.logo span {
+    color: #e63946;
+}
+
+
+
+/* ---------- Navigation ---------- */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+
+.navbar a {
+    text-decoration: none;
+
+    color: #4b5563;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+
+.navbar a:hover,
+.navbar a.active {
+    color: #e63946;
+}
+
+
+
+/* =========================================
+   Disaster Hero
+   ========================================= */
+
+.disaster-hero {
+    text-align: center;
+
+    padding: 65px 0 50px;
+}
+
+
+.disaster-icon {
+    width: 110px;
+    height: 110px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 65px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.section-label {
+    color: #e63946;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+.disaster-hero h1 {
+    color: #172033;
+
+    font-size: clamp(34px, 5vw, 50px);
+
+    line-height: 1.15;
+
+    margin-bottom: 18px;
+}
+
+
+.disaster-description {
+    max-width: 680px;
+
+    margin: 0 auto;
+
+    color: #6b7280;
+
+    font-size: 16px;
+}
+
+
+
+/* =========================================
+   Safety Section
+   ========================================= */
+
+.safety-section {
+    padding: 10px 0 55px;
+}
+
+
+.safety-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 24px;
+}
+
+
+
+/* =========================================
+   Safety Cards
+   ========================================= */
+
+.safety-card {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 16px;
+
+    padding: 26px;
+
+    min-height: 320px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.safety-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.09);
+}
+
+
+
+/* ---------- Card Header ---------- */
+
+.safety-card-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 22px;
+}
+
+
+.safety-icon {
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eef3f7;
+
+    border-radius: 12px;
+
+    font-size: 27px;
+}
+
+
+.card-label {
+    color: #e63946;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 2px;
+}
+
+
+.safety-card h2 {
+    color: #172033;
+
+    font-size: 24px;
+
+    line-height: 1.2;
+}
+
+
+
+/* ---------- Lists ---------- */
+
+.safety-card ul {
+    padding-left: 20px;
+}
+
+
+.safety-card li {
+    color: #4b5563;
+
+    font-size: 14px;
+
+    margin-bottom: 12px;
+
+    padding-left: 4px;
+}
+
+
+.safety-card li::marker {
+    color: #e63946;
+}
+
+
+
+/* =========================================
+   Back Button
+   ========================================= */
+
+.back-section {
+    padding: 5px 0 70px;
+
+    text-align: center;
+}
+
+
+.back-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 11px 18px;
+
+    border-radius: 6px;
+
+    background: #142552;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.back-button:hover {
+    background: #0b1c48;
+
+    transform: translateY(-1px);
+}
+
+
+
+/* =========================================
+   Footer
+   ========================================= */
+
+.footer {
+    background: #172033;
+
+    color: #cbd5e1;
+
+    text-align: center;
+
+    padding: 24px 15px;
+
+    font-size: 13px;
+}
+
+
+
+/* =========================================
+   Tablet
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .safety-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+
+/* =========================================
+   Mobile
+   ========================================= */
+
+@media (max-width: 650px) {
+
+    .header-content {
+        min-height: 60px;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        gap: 8px;
+
+        padding: 12px 0;
+    }
+
+
+    .navbar {
+        gap: 16px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .navbar a {
+        font-size: 13px;
+    }
+
+
+    .disaster-hero {
+        padding: 45px 0 35px;
+    }
+
+
+    .disaster-icon {
+        width: 90px;
+        height: 90px;
+
+        font-size: 52px;
+    }
+
+
+    .safety-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .safety-card {
+        min-height: auto;
+    }
+
+
+    .back-section {
+        padding-bottom: 50px;
+    }
+
+}
+

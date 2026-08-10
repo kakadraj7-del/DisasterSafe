@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Disaster Information - DisasterSafe</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/preparedness_info.css') }}">
+
+</head>
+
+
+<body>
+
+
+<!-- Header -->
+
+<header class="header">
+
+    <div class="container header-content">
+
+        <a href="{{ url_for('home') }}"
+           class="logo">
+
+            DisasterSafe
+
+        </a>
+
+
+        <nav class="navbar">
+
+            <a href="{{ url_for('home') }}">
+                Home
+            </a>
+
+            <a href="{{ url_for('preparedness') }}"
+               class="active">
+
+                Preparedness
+
+            </a>
+
+            <a href="{{ url_for('guidelines') }}">
+                Guidelines
+            </a>
+
+            <a href="{{ url_for('emergency_contacts') }}">
+                Emergency
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- Main Content -->
+
+<main>
+
+
+    <!-- Disaster Heading -->
+
+    <section class="disaster-hero">
+
+        <div class="container">
+
+            <div class="disaster-icon"
+                 id="disaster-icon">
+
+                🌊
+
+            </div>
+
+
+            <p class="section-label">
+                DISASTER SAFETY
+            </p>
+
+
+            <h1 id="disaster-title">
+                Flood
+            </h1>
+
+
+            <p class="disaster-description"
+               id="disaster-description">
+
+                Learn how to stay safe before, during,
+                and after a disaster.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Safety Information -->
+
+    <section class="safety-section">
+
+        <div class="container">
+
+
+            <div class="safety-grid">
+
+
+                <!-- Before -->
+
+                <article class="safety-card">
+
+                    <div class="safety-card-header">
+
+                        <div class="safety-icon">
+                            🛡️
+                        </div>
+
+                        <div>
+
+                            <p class="card-label">
+                                PREPARE
+                            </p>
+
+                            <h2>
+                                Before
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <ul id="before-list">
+
+                        <li>
+                            Prepare an emergency kit.
+                        </li>
+
+                        <li>
+                            Follow official warnings.
+                        </li>
+
+                        <li>
+                            Know your evacuation route.
+                        </li>
+
+                    </ul>
+
+                </article>
+
+
+
+                <!-- During -->
+
+                <article class="safety-card">
+
+                    <div class="safety-card-header">
+
+                        <div class="safety-icon">
+                            🚨
+                        </div>
+
+                        <div>
+
+                            <p class="card-label">
+                                RESPOND
+                            </p>
+
+                            <h2>
+                                During
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <ul id="during-list">
+
+                        <li>
+                            Stay calm and follow official instructions.
+                        </li>
+
+                        <li>
+                            Move to a safe location.
+                        </li>
+
+                        <li>
+                            Keep your phone charged.
+                        </li>
+
+                    </ul>
+
+                </article>
+
+
+
+                <!-- After -->
+
+                <article class="safety-card">
+
+                    <div class="safety-card-header">
+
+                        <div class="safety-icon">
+                            ✅
+                        </div>
+
+                        <div>
+
+                            <p class="card-label">
+                                RECOVER
+                            </p>
+
+                            <h2>
+                                After
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <ul id="after-list">
+
+                        <li>
+                            Wait for the official all-clear.
+                        </li>
+
+                        <li>
+                            Stay away from damaged areas.
+                        </li>
+
+                        <li>
+                            Follow local authority guidance.
+                        </li>
+
+                    </ul>
+
+                </article>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Back Button -->
+
+    <section class="back-section">
+
+        <div class="container">
+
+            <a href="{{ url_for('preparedness') }}"
+               class="back-button">
+
+                ← Back to Preparedness
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- Footer -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <p>
+            © 2026 DisasterSafe.
+            Disaster Preparedness & Awareness System.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+</body>
+
+</html>
+
