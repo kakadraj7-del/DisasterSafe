@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 
@@ -7,9 +8,7 @@ app = Flask(__name__)
 # DATABASE CONFIGURATION
 # =========================
 
-app.config["SQLALCHEMY_DATABASE_URI"] = (
-    "postgresql+psycopg2://postgres:RK_2026@localhost:5432/DisasterSafe"
-)
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL")
 
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
