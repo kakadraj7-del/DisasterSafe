@@ -88,13 +88,12 @@ body {
 ========================= */
 
 .hero {
-    background: linear-gradient(
-        135deg,
-        #172554,
-        #1e40af
-    );
-
-    color: white;
+    background:
+        linear-gradient(
+            110deg,
+            #fff3f2 0%,
+            #fff8f7 100%
+        );
     padding: 75px 7%;
 }
 
@@ -102,6 +101,7 @@ body {
     max-width: 900px;
     margin: auto;
     text-align: center;
+    color: #596275;
 }
 
 .badge {
@@ -115,18 +115,20 @@ body {
 
 .hero h1 {
     font-size: 42px;
+    color: #14264d;
     line-height: 1.2;
     margin-bottom: 20px;
 }
 
 .hero h1 span {
-    color: #fca5a5;
+    color: #ef4d5b;
 }
 
 .hero p {
     max-width: 650px;
     margin: auto;
     font-size: 17px;
+    color: #596275;
     opacity: 0.9;
 }
 
