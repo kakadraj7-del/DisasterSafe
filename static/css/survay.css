@@ -71,7 +71,7 @@ body {
 
 .navbar nav a {
     text-decoration: none;
-    color: #374151;
+    color: #ffffff;
     font-size: 15px;
     font-weight: 600;
     transition: 0.3s;
@@ -322,7 +322,7 @@ footer {
     }
 
     .form-wrapper iframe {
-        min-height: 1400px;
+        min-height: 2400px;
     }
 
     .footer-content {
