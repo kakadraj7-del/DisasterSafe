@@ -1213,6 +1213,43 @@ main {
 }
 
 
+/* ---------- mobile---------- */
+
+@media (max-width: 600px) {
+
+    .preparedness-section {
+        margin: 0 16px 25px;
+        padding: 14px;
+        gap: 12px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .preparedness-score {
+        flex-shrink: 0;
+    }
+
+    .preparedness-content {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .preparedness-content h2 {
+        font-size: 13px;
+    }
+
+    .preparedness-content p {
+        font-size: 9px;
+    }
+
+    .checklist-button {
+        width: 100%;
+        min-height: 38px;
+        margin-top: 3px;
+    }
+}
+
+
 /* ---------- Footer ---------- */
 
 .footer {
