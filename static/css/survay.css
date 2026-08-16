@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -29,8 +27,10 @@ body {
     justify-content: space-between;
     padding: 0 7%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-    position: sticky;
-    top: 0;
+
+    /* Changed for testing */
+    position: relative;
+    top: auto;
     z-index: 1000;
 }
 
