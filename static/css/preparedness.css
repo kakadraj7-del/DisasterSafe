@@ -50,6 +50,9 @@ body {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
     text-decoration: none;
     color: #ffffff;
     font-size: 25px;
@@ -57,7 +60,25 @@ body {
     letter-spacing: -0.5px;
 }
 
-.logo span {
+.logo-icon {
+    width: 30px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f04d5d;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 900;
+    clip-path: polygon(
+        50% 0%,
+        100% 100%,
+        0% 100%
+    );
+    padding-top: 6px;
+}
+
+.logo span span {
     color: #e63946;
 }
 
