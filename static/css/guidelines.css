@@ -63,29 +63,39 @@ body {
 
 /* Logo */
 
-.brand {
+.Gbrand {
     display: flex;
     align-items: center;
     gap: 9px;
-    color: #ffffff;
     text-decoration: none;
-    font-size: 15px;
-    font-weight: 700;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
 }
 
-
-.brand-icon {
-    width: 27px;
-    height: 27px;
+.Gbrand-icon {
+    width: 30px;
+    height: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 7px;
-    background: #ef4658;
+    background: #f04d5d;
     color: #ffffff;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 900;
+    clip-path: polygon(
+        50% 0%,
+        100% 100%,
+        0% 100%
+    );
+    padding-top: 6px;
 }
+
+.Gbrand span span {
+    color: #e63946;
+}
+
 
 
 /* Navigation */

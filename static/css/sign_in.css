@@ -62,32 +62,39 @@ body {
    BRAND
 ========================================================= */
 
-.signin-brand {
+.SIbrand {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 28px;
-}
-
-.brand-icon {
-    width: 34px;
-    height: 34px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    background: #08295f;
+    gap: 9px;
+    text-decoration: none;
     color: #ffffff;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
 }
 
-.signin-brand h1 {
-    color: #08295f;
-    font-size: 22px;
-    font-weight: 700;
+.SIbrand-icon {
+    width: 30px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f04d5d;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 900;
+    clip-path: polygon(
+        50% 0%,
+        100% 100%,
+        0% 100%
+    );
+    padding-top: 6px;
 }
+
+.SIbrand span span {
+    color: #e63946;
+}
+
 
 
 /* =========================================================
