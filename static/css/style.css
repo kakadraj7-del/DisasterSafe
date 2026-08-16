@@ -1122,8 +1122,8 @@ main {
 }
 
 .score-circle {
-    width: 62px;
-    height: 62px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1137,8 +1137,8 @@ main {
 }
 
 .score-circle-inner {
-    width: 50px;
-    height: 50px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     display: flex;
     align-items: center;
