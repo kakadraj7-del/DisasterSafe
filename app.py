@@ -172,6 +172,10 @@ def emergency_contacts():
 def preparedness_info():
     return render_template("preparedness_info.html")
 
+@app.route("/survay")
+def survey():
+    return render_template("survay.html")
+
 
 # =========================
 # RUN APPLICATION
