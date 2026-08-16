@@ -173,7 +173,7 @@ def preparedness_info():
     return render_template("preparedness_info.html")
 
 @app.route("/survay")
-def survey():
+def survay():
     return render_template("survay.html")
 
 
