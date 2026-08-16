@@ -13,22 +13,14 @@ function openWeatherAlerts(event) {
 
     navigator.geolocation.getCurrentPosition(
         function(position) {
-            const latitude = position.coords.latitude;
-            const longitude = position.coords.longitude;
-
-            // Open weather website after location is obtained
-            const weatherUrl =
-                `https://www.msn.com/en-in/weather/maps/lightning?lat=${latitude}&lon=${longitude}`;
-
-            window.open(weatherUrl, "_blank");
+            // Location permission obtained
+            window.open(
+                "https://www.msn.com/en-in/weather/",
+                "_blank"
+            );
         },
-
-        function(error) {
-            if (error.code === error.PERMISSION_DENIED) {
-                alert("Location permission is required to view weather alerts.");
-            } else {
-                alert("Unable to get your location. Please try again.");
-            }
+        function() {
+            alert("Please allow location access to view weather alerts.");
         }
     );
 }
