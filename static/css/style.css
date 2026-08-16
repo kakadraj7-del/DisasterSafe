@@ -1213,91 +1213,13 @@ main {
 }
 
 
-/* =========================================================
-   PREPAREDNESS - MOBILE
-========================================================= */
+/* ---------- Footer ---------- */
 
-@media (max-width: 600px) {
-
-    .preparedness-section {
-        margin: 0 16px 25px;
-        min-height: 85px;
-        padding: 11px 13px;
-        gap: 12px;
-    }
-
-    .score-circle {
-        width: 58px;
-        height:58px;
-    }
-
-    .score-circle-inner {
-        width: 48px;
-        height: 48px;
-    }
-
-    .score-circle-inner span {
-        font-size: 13px;
-    }
-
-    .preparedness-content h2 {
-        font-size: 12px;
-    }
-
-    .preparedness-content p {
-        font-size: 8px;
-    }
-
-    .preparedness-content p br {
-        display: none;
-    }
-
-    .checklist-button {
-        min-height: 32px;
-        padding: 0 9px;
-        gap: 6px;
-        font-size: 9px;
-    }
-
-    .checklist-arrow {
-        font-size: 15px;
-    }
+.footer {
+    background: #172033;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 24px 15px;
+    font-size: 13px;
 }
 
-
-/* =========================================================
-   PREPAREDNESS - SMALL PHONES
-========================================================= */
-
-@media (max-width: 380px) {
-
-    .preparedness-section {
-        margin-left: 12px;
-        margin-right: 12px;
-
-        gap: 9px;
-    }
-
-    .score-circle {
-        width: 50px;
-        height: 50px;
-    }
-
-    .score-circle-inner {
-        width: 40px;
-        height: 40px;
-    }
-
-    .score-circle-inner span {
-        font-size: 13px;
-    }
-
-    .preparedness-content p {
-        font-size: 7.5px;
-    }
-
-    .checklist-button {
-        padding: 0 7px;
-        font-size: 8px;
-    }
-}
