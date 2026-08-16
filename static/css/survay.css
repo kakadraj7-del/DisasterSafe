@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #f5f7fa;
@@ -63,7 +67,6 @@ body {
     color: #e63946;
 }
 
-
 .navbar nav {
     display: flex;
     gap: 25px;
@@ -74,7 +77,7 @@ body {
     color: #ffffff;
     font-size: 15px;
     font-weight: 600;
-    transition: 0.3s;
+    transition: color 0.3s ease;
 }
 
 .navbar nav a:hover,
@@ -236,7 +239,7 @@ body {
 .form-wrapper iframe {
     display: block;
     width: 100%;
-    min-height: 1200px;
+    height: 1200px;
     border: none;
 }
 
@@ -321,8 +324,9 @@ footer {
         border-radius: 10px;
     }
 
+    /* Reduced from 2400px */
     .form-wrapper iframe {
-        min-height: 2400px;
+        height: 1800px;
     }
 
     .footer-content {
@@ -332,10 +336,32 @@ footer {
 }
 
 
+/* =========================
+   SMALL PHONES
+========================= */
+
 @media (max-width: 450px) {
+
+    .Sbrand {
+        font-size: 22px;
+    }
+
+    .Sbrand-icon {
+        width: 27px;
+        height: 25px;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 45px 15px;
+    }
 
     .hero h1 {
         font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
     }
 
     .survey-container {
@@ -344,5 +370,10 @@ footer {
 
     .info-card {
         padding: 20px;
+    }
+
+    /* Smaller iframe on small phones */
+    .form-wrapper iframe {
+        height: 1700px;
     }
 }
