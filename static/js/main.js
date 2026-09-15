@@ -15,7 +15,7 @@ function openWeatherAlerts(event) {
         function(position) {
             // Location permission obtained
             window.open(
-                "https://www.msn.com/en-in/weather/",
+                "https://sachet.ndma.gov.in/",
                 "_blank"
             );
         },
